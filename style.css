@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 12px;
+}
+
+
+.nav-list ul{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    font-size: 1.2em;
+}
+
+.left-nav{
+    display: flex;
+    align-items: center;
+}
+.icon{
+    height: 40px;
+    width: 40px;
+    border-radius: 12px 12px 12px 12px;
+    margin-right: 10px;
+}
+.wojack{
+    height: 350px;
+    width: 350px;
+    margin-left: 20px;
+    background: url(images/doge2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px 12px 12px 12px;
+    overflow: hidden;
+}
+.content{
+    display: flex;
+
+    align-items: center;
+    justify-content: space-evenly;
+}
+.text-content{
+    margin-top: 120px;
+}
+.video-doge{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+iframe{
+    max-width: 100vw;
+    max-height:  56.25vw;
+}
+.video-doge h3{
+    margin-bottom: 20px;
+}
+.quote-container{
+    margin-top: 8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.quote{
+    width: 650px;
+    text-align: justify;
+    line-height: 20px;
+}
+@media (max-width:600px) {
+    .nav-bar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-list ul{
+        display: flex;
+        flex-direction: column;
+        /* align-items: center;
+        justify-content: center; */
+        gap: 10px;
+    }
+    .icon{
+        margin-right: 5px;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .wojack{
+        height: 300px;
+        width: 300px;
+    }
+    .text-content{
+        margin-top: 20px;
+    }
+    .yt-video{
+        height: 300;
+        padding: 20px;
+        width: 350;
+    }
+    .quote-container{
+        margin-top: 3em;
+    }
+    .quote{
+        width: 350px;
+        text-align: justify;
+    }
+}
